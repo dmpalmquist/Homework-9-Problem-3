@@ -25,3 +25,16 @@ void printmatrix(char mymat[][5], int Num_rows, int Num_cols){
   cout << endl;
   }
 }
+
+int getgrade(char mymat[][5], int Num_tests){
+  const char answers[5] = {'T', 'T', 'F', 'F', 'T'};
+  int *marks = new int[Num_tests]; 
+  const int mark = 5;
+
+  for (int r = 0; r < Num_tests; r++){
+    for (int c = 0; c < 5;)
+  }
+  
+    
+  
+}
