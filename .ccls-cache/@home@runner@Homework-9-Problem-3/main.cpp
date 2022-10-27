@@ -16,8 +16,10 @@ int main() {
 
   //printmatrix(tandf, 6, 5);
 
-  int *marks = getgrade(tandf, 6);
-  for (int i = 0; )
+  int *grades = getgrade(tandf, 6);
+  for (int i = 0; i < 6; i++){
+    cout << grades[i] << " ";
+  }
   
 }
 
@@ -32,17 +34,17 @@ void printmatrix(char mymat[][5], int Num_rows, int Num_cols){
 
 int *getgrade(char mymat[][5], int Num_tests){
   const char answers[5] = {'T', 'T', 'F', 'F', 'T'};
-  int *marks = new int[Num_tests]; 
+  int *grades = new int[Num_tests]; 
   const int mark = 5;
 
   for (int r = 0; r < Num_tests; r++){
     for (int c = 0; c < 5; c++){
       if (mymat[r][c] == answers[c])
-        marks[c] += mark;
+        grades[c] += mark;
     }
   }
 
-  return marks;
+  return grades;
   
     
   
